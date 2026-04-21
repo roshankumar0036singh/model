@@ -43,15 +43,3 @@ if st.button('Predict Salary'):
     # Make prediction
     prediction = loaded_model.predict(input_data)
     st.success(f"### Predicted Salary: ${prediction[0]:,.2f}")
-
-# --- How to run this app in Colab ---
-st.markdown("""
-To run this Streamlit app:
-1.  Run the Python cell above to create the `app.py` file.
-2.  Execute the following commands in new code cells:
-    ```python
-    !streamlit run app.py & npx localtunnel --port 8501
-    ```
-    You will get a public URL (e.g., `https://xxxx-yyyy-zzzz.loca.lt`) to access your app. 
-    It might take a minute for the URL to appear and become active.
-""")
